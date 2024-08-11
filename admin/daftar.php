@@ -22,48 +22,53 @@ $result = $conn->query($sql);
 
 
 <h1 class="text-center">Halaman User</h1>
-
-<div class="container mx-auto mt-8 p-4">
-    <div class="text-center mb-4">
-        <button class="btn btn-info">
+<div class="text-center mb-4">
+         <button class="btn btn-info">
             <a href="daftar/tambah.php" class="text-white">Tambah Data</a>
-        </button>
-    </div>
-    <div class="overflow-x-auto">
-        <div class="mx-auto w-full max-w-4xl">
-            <table class="table w-full">
-                <!-- head -->
-                <thead class="">
-                    <tr>
-                        <th>#</th>
-                        <th>Name</th>
-                        <th>Deskripsi</th>
-                        <th>Image</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    if ($result->num_rows > 0) {
-                        $index = 1;
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<tr class='bg-base-200'>";
-                            echo "<td>" . $index++ . "</td>";
-                            echo "<td>" . $row['name'] . "</td>";
-                            echo "<td>" . $row['description'] . "</td>";
-                            echo "<td><img src='../assets/image/" . $row['image'] . "' alt='" . $row['name'] . "' style='width:100px;height:100px;'></td>";
-                            echo "<td>";
-                            echo "<a href='daftar/edit.php?id=" . $row['id'] . "' class='btn btn-warning btn-sm'>Edit</a> ";
-                            echo "<a href='daftar/delete.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Apakah Anda yakin ingin menghapus?\")'>Hapus</a>";
-                            echo "</td>";
-                            echo "</tr>";
+         </button>
+   </div>
+<div class="overflow-x-auto">
+    <div class="mx-auto w-full max-w-4xl">
+        <table class="table w-full">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Trailer</th> <!-- Kolom baru untuk link YouTube -->
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                if ($result->num_rows > 0) {
+                    $index = 1;
+                    while ($row = $result->fetch_assoc()) {
+                        echo "<tr class='bg-base-200'>";
+                        echo "<td>" . $index++ . "</td>";
+                        echo "<td>" . $row['name'] . "</td>";
+                        echo "<td>" . $row['description'] . "</td>";
+                        echo "<td><img src='../assets/image/" . $row['image'] . "' alt='" . $row['name'] . "' style='width:100px;height:100px;'></td>";
+                        echo "<td>";
+                        if (!empty($row['youtube_link'])) {
+                            echo "<a href='" . $row['youtube_link'] . "' target='_blank' class='btn btn-link btn-sm'>Watch Trailer</a>";
+                        } else {
+                            echo "No Trailer";
                         }
-                    } else {
-                        echo "<tr><td colspan='5'>Tidak ada data</td></tr>";
+                        echo "</td>";
+                        echo "<td>";
+                        echo "<a href='daftar/edit.php?id=" . $row['id'] . "' class='btn btn-warning btn-sm'>Edit</a> ";
+                        echo "<a href='daftar/delete.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure you want to delete?\")'>Delete</a>";
+                        echo "</td>";
+                        echo "</tr>";
                     }
-                    ?>
-                </tbody>
-            </table>
-        </div>
+                } else {
+                    echo "<tr><td colspan='6'>No data available</td></tr>";
+                }
+                ?>
+            </tbody>
+        </table>
     </div>
 </div>

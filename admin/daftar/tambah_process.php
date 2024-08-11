@@ -1,24 +1,30 @@
 <?php
 include '../../connect.php';
 
-$name = $_POST["name"]; //mengambil data dari tambah dengan nama name
-$description = $_POST["description"]; //mengambil data dari tambah dengan nama desccriptions
-$image = $_FILES["image"]["name"]; //mengambil data dari tambah dengan nama image
+$name = $_POST["name"]; // Mengambil data dari input name
+$description = $_POST["description"]; // Mengambil data dari input description
+$image = $_FILES["image"]["name"]; // Mengambil data dari input image
+$youtube_link = $_POST["youtube_link"]; // Mengambil data dari input youtube_link
+
 $target_dir = "../../assets/image/";
 $target_file = $target_dir . basename($image);
 
+// Upload gambar dan simpan data ke database
 if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-    $sql = "INSERT INTO items (name, description, image) VALUES ('$name', '$description', '$image')";
+    // Menyimpan data ke dalam tabel items
+    $sql = "INSERT INTO items (name, description, image, youtube_link) VALUES ('$name', '$description', '$image', '$youtube_link')";
     if ($conn->query($sql) === TRUE) {
         echo "Data berhasil ditambahkan";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 } else {
-    echo "Sorry, there was an error uploading your file.";
+    echo "Maaf, terjadi kesalahan saat mengupload file.";
 }
 
 $conn->close();
+
+// Redirect ke halaman daftar
 header("Location: ../daftar.php");
 exit();
 

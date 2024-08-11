@@ -37,11 +37,14 @@ include '../../head.php';
         Description
         <input type="text" name="description" value="<?php echo htmlspecialchars($row['description']); ?>" required>
       </label>
+      <label class="input input-bordered flex items-center gap-2">
+        YouTube Link
+        <input type="url" name="youtube_link" value="<?php echo htmlspecialchars($row['youtube_link']); ?>">
       </label>
       <label class="input input-bordered flex items-center gap-2">
-          New Image (Leave blank if not changing)
-          <input type="file" class="file-input w-full max-w-xs" name="image">
-        </label>
+        New Image (Leave blank if not changing)
+        <input type="file" class="file-input w-full max-w-xs" name="image">
+      </label>
       <div>
         <button type="submit" class="btn btn-primary">Update</button>
         <a href="../daftar.php" class="btn btn-secondary">Kembali</a>

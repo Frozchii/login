@@ -20,6 +20,10 @@ include '../../connect.php';
         Image
         <input type="file" class="file-input w-full max-w-xs" id="file" name="image" required />
       </label>
+      <label class="input input-bordered flex items-center gap-2">
+        YouTube Link <!-- Kolom baru untuk link YouTube -->
+        <input type="url" class="grow" placeholder="https://www.youtube.com/watch?v=example" id="youtube_link" name="youtube_link" />
+      </label>
       <div>
         <button type="submit" class="btn btn-primary">Simpan</button>
         <a href="../daftar.php" class="btn btn-secondary">Kembali</a>

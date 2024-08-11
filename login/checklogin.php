@@ -29,7 +29,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['leve
             if ($level == "pengunjung") {
                 header('Location: home_pengunjung.php');
             } elseif ($level == "user") {
-                header('Location:../home_user.php');
+                header('Location:../user/home_user.php');
             } elseif ($level == "admin") {  
                 header('Location:../admin/home_admin.php');
             }
