@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $query = "INSERT INTO t_user (username, password, nama_lengkap, level) VALUES ('$username', '$password', '$nama_lengkap', '$level')";
         
         if (mysqli_query($conn, $query)) {  
-            echo "<script>alert('Pendaftaran berhasil, silakan login');document.location='login.php';</script>";
+            header("Location: login.php?pendaftaran berhasil");
         } else {
             echo "Error: " . $query . "<br>" . mysqli_error($conn);
         }

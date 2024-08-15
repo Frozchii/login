@@ -17,18 +17,60 @@ $result = $conn->query($sql);?>
 
 
   <!-- content -->
-  
+
+  <!-- hero -->
   <div class="hero">
     <div class="hero-content text-center">
       <div class="max-w-md">
         <h2 class="text-5xl font-bold">Hello there</h2>
-        <p class="py-6">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit maxime quam dicta necessitatibus unde architecto consequatur illo voluptas, laborum eius excepturi, atque a alias quasi assumenda minus, est cum nihil.
-        </p>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-primary">
+          <a href="pendaftaran/from_pendaftaran.php">daftar</a>
+        </button>
       </div>
     </div>
   </div>
+
+  
+  <div class="carousel w-full my-8">
+  <div id="slide1" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide4" class="btn btn-circle">❮</a>
+      <a href="#slide2" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide2" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" class="btn btn-circle">❮</a>
+      <a href="#slide3" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide3" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" class="btn btn-circle">❮</a>
+      <a href="#slide4" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" class="carousel-item relative w-full">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+      class="w-full" />
+    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" class="btn btn-circle">❮</a>
+      <a href="#slide1" class="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>
+  
+
 
 <!-- card -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mx-8 my-8 justify-items-center">

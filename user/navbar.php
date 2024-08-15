@@ -31,15 +31,15 @@
                             <h1 class="text-2xl text-center">MENU</h1>
                             <!-- Sidebar content here -->
                             <li>
-                                <a href="home_admin.php">
+                                <a href="home_user.php">
                                     <i class="fa fa-home" aria-hidden="true"> </i>
                                     home
                                 </a>
                             </li>
                             <li>
-                                <a href="user.php">
+                                <a href="daftar/daftar_dasboard.php">
                                     <i class="fa fa-user" aria-hidden="true"></i>
-                                    daftar user
+                                    ektra
                                 </a>
                             </li>
                             <li>
