@@ -52,7 +52,7 @@
                     <option value="tonti">Tonti</option>
                     <option value="rohis">Rohis</option>
                     <option value="english club">English Club</option>
-                    <option value="PMR">Palang Merah Remaja</option>
+                    <option value="Palang Merah Remaja">Palang Merah Remaja</option>
                     <option value="futsal">Futsal</option>
                     <option value="basket">Basket</option>
                     <option value="robotik">Robotik</option>

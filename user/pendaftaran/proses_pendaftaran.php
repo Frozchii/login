@@ -164,8 +164,8 @@ echo '<!DOCTYPE html>
         <div class="header">
             <img src="https://upload.wikimedia.org/wikipedia/id/thumb/f/f0/Logo_SMKN3Yk.JPG/175px-Logo_SMKN3Yk.JPG" alt="Logo Instansi">
             <div class="instansi">
-                <h1>Nama Instansi</h1>
-                <p>Alamat Instansi</p>
+                <h1>SMKN 3 YOGYAKARTA</h1>
+                <p>Jl. R.W. Monginsidi No.2, Cokrodiningratan, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta</p>
             </div>
         </div>
         <hr class="full-width"> <!-- Full width horizontal line -->

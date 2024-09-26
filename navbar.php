@@ -1,7 +1,7 @@
 <?php
 include 'head.php';
 ?>
-<div class="navbar bg-base-100">
+<div class="navbar bg-green-500 text-white">
   <div class="navbar-start">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -22,7 +22,7 @@ include 'head.php';
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-    <a class="btn btn-ghost text-xl">daisyUI</a>
+      <a class="btn btn-ghost text-xl">daisyUI</a>
     </ul>
   </div>
   <div class="navbar-end mx-8">

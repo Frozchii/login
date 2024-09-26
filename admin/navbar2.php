@@ -48,7 +48,12 @@
                                     content
                                 </a>
                             </li>
-                            <li><a>Sidebar Item 2</a></li>
+                            <li>
+                                <a href="ekskul.php">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    content
+                                </a>
+                            </li>
 
                         </ul>
                     </div>
