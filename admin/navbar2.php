@@ -11,8 +11,8 @@
 </head>
 
 <body data-themes="dim">
-
-    <div class="navbar bg-base-100 z-10 relative">
+    
+    <div class="navbar bg-green-500 z-10 relative text-white">
         <div class="navbar-start">
             <div>
                 <div class="drawer">
@@ -26,9 +26,9 @@
                         </label>
                     </div>
                     <div class="drawer-side">
-                        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                            <h1 class="text-2xl text-center">MENU</h1>
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-green-500 text-white min-h-full w-80 p-4">
+                            <h1 class="text-2xl  text-center">MENU</h1>
                             <!-- Sidebar content here -->
                             <li>
                                 <a href="home_admin.php">
@@ -45,13 +45,13 @@
                             <li>
                                 <a href="daftar.php">
                                     <i class="fa fa-user" aria-hidden="true"></i>
-                                    content
+                                    daftar ekstra
                                 </a>
                             </li>
                             <li>
                                 <a href="ekskul.php">
                                     <i class="fa fa-user" aria-hidden="true"></i>
-                                    content
+                                    siswa pendaftar
                                 </a>
                             </li>
 
@@ -60,9 +60,11 @@
                 </div>
 
             </div>
-        </div>
-        <div class="navbar-center">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+
+            <a href="home_admin.php" class="btn btn-ghost text-xl">Home</a> 
+            <a  href="daftar.php" class="btn btn-ghost text-xl">Daftar Ekstra</a>
+            <a href="user.php" class="btn btn-ghost text-xl">Daftar User</a> 
+            <a  href="ekskul.php" class="btn btn-ghost text-xl">Siswa pendaftar</a>
         </div>
         <div class="navbar-end">
             <button class="btn btn-ghost btn-circle">
@@ -80,7 +82,7 @@
             <input type="checkbox" id="account-modal" class="modal-toggle" />
             <div class="modal modal-bottom sm:modal-middle">
                 <!-- container -->
-                <div class="modal-box top-8 right-1 absolute mt-4 mr-4 w-1/5 mr-8 tec">
+                <div class="modal-box bg-white text-black top-8 right-1 absolute mt-4 mr-4 w-1/5 mr-8 tec">
                     <div>
                         <h3 class="font-bold text-lg text-center">Account Details</h3>
                         <p class="py-4">Username: </p>

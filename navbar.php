@@ -22,7 +22,7 @@ include 'head.php';
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
-      <a class="btn btn-ghost text-xl">daisyUI</a>
+      <a class="btn btn-ghost text-xl">SKAGATA</a>
     </ul>
   </div>
   <div class="navbar-end mx-8">

@@ -1,0 +1,22 @@
+Web ini diselesaikan pada tanggal 29 september 2024 diselesaikan oleh Yoga Aditya Pratama.
+web ini gw selesaikan secara mandiri anjay kata gw teh enggak deng gw juga pake bantuan chat gpt . 
+jadi bagi kalian yang merasa minder tidak bisa mengonding  kalian bisa nonton tutorial. ohya yang terpenting 
+jika klean mau pakai ai yang terpenting klean paham logikanya sama dasar dasar aja trims
+ohya semangat ya bagi klean yang pake web ini untuk dikembangin "klean boleh nangis tapi nyerah jangan " hoooek jijik bet gw nulis ginian 
+
+saya arifah sebagai temannya yoga , semangat buuat kaliaan yang nerus ngembangin web ini semangat yaaaaa
+soalnya kami ini susah banget tapi keren banget cikkkk
+kamu jangann putus asa dan jangan muak atau jenuh ya pas buat ini 
+karena kita sama sekali ga muak kok, cuma laper aja kok hehehe
+salam taruna salam coding salam nahan laper 
+
+ohya ini pasword untuk akses login nya 
+admin : usenamenya admin passwordnya admin
+user : usernamenya user passwordnya user //kalo salah untuk user nya bisa register
+
+untuk memasang filenya atau codingannya bisa tanya pak bram 
+atau ekstrak zipnya masuk ke sql dan abis itu cari import di tab atas , abis itu loe pilih file nya yang di dalam folder ini db login yang 
+ekstensinay sql abis itu file ini pindah di htdocs . "htdocs dimana?" cari sendiri jan manja . trus untuk buka kodingan tinggal buka gfile ini di 
+vscode dan untuk askses di websitnya localhost/nama_file ini/ search ini di google. 
+
+kalo kalian pakai web ini jhan lu[pa tag di ig kelas kami @netizen.working 

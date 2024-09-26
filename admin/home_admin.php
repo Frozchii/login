@@ -19,15 +19,17 @@ $result = $conn->query($sql);
 
 <?php include 'navbar2.php'; ?>
 
-<div class="hero bg-base-200 min-h-screen flex items-start">
-  <div class="hero-content text-center mx-auto mt-8">
-    <div class="max-w-md">
-      <h1 class="text-5xl font-bold">Hello there</h1>
-      <p class="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button class="btn btn-primary">Get Started</button>
-    </div>
-  </div>
-</div>
+      <!-- Hero Section with Background Image -->
+      <section class="hero-background min-h-screen text-white py-20 flex items-center">
+        <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center bg-green-600 bg-opacity-70 rounded-lg p-8">
+            <!-- Text on the left -->
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-5xl font-bold">Welcome to Halaman Admin</h1>
+                <p class="mt-4 text-xl">Kendali ada di genggaman tanggan anda</p>
+            </div>
+            <!-- Image on the right -->
+            <div class="lg:w-1/2 mt-10 lg:mt-0 flex justify-center">
+                <img src="../assets/image/bg.png" alt="School Image" class="rounded-lg" style="width: 900px;">
+            </div>
+        </div>
+    </section>  

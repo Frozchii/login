@@ -19,7 +19,7 @@ $result = $conn->query($sql);
 
 <?php include 'navbar2.php'; ?>
 <!-- tabel user -->
-<h1 class="text-center">halaman user</h1>
+<h1 class="text-center my-4 text-2xl text-black ">Daftar User</h1>
 <div class="container mx-auto mt-8 p-4">
    <div class="text-center mb-4">
          <button class="btn btn-info">
@@ -28,9 +28,9 @@ $result = $conn->query($sql);
    </div>
    <div class="overflow-x-auto">
       <div class="mx-auto w-full max-w-4xl">
-         <table class="table w-full">
+         <table class="table w-full text-black">
             <!-- head -->
-            <thead class="">
+            <thead class="text-black">
                <tr>
                   <th>id</th>
                   <th>username</th>
@@ -44,7 +44,7 @@ $result = $conn->query($sql);
                <?php
                 $counter = 1; 
                while ($row = $result->fetch_assoc()) : ?>
-                  <tr class="bg-base-200">
+                  <tr class="">
                      <td><?php echo $counter++; ?></td>
                      <td><?php echo $row['username']; ?></td>
                      <td><?php echo $row['nama_lengkap']; ?></td>

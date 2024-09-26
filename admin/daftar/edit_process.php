@@ -39,7 +39,7 @@ if ($image) {
 
     // Upload gambar baru
     if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
-        $image_sql = "image = '$image',";
+        $image_sql = "image = '$image'";
     } else {
         echo "Maaf, terjadi kesalahan saat mengupload file.";
         exit();
@@ -52,8 +52,9 @@ $sql = "UPDATE items SET
             description = '$description', 
             youtube_link = '$youtube_link'";
 
-if ($image_sql) {
-    $sql .= ", $image_sql";
+// Hanya tambahkan bagian untuk gambar jika ada
+if (!empty($image_sql)) {
+    $sql .= ", $image_sql"; // Tidak ada koma di depan jika ada gambar baru
 }
 
 $sql .= " WHERE id = $id";
@@ -67,4 +68,4 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
-
+    

@@ -18,18 +18,20 @@ include '../connect.php';
 <?php include '../head.php'; ?>
 
 <?php include 'navbar2.php'; ?>
-<h1 class="text-center my-4 text-2xl ">PENDAFTARAN EKSTRAKULIKULER</h1>
-<button class="btn mb-4">
+<h1 class="text-center my-4 text-2xl text-black ">PENDAFTARAN EKSTRAKULIKULER</h1>
+<div class="flex justify-center">
+<button class="btn mb-4 btn-success ">
     <a href="ekskul/eksport-excel.php">
         EKSPORT KE EXCEL
     </a>
 </button>
+</div>
 <div class="overflow-x-auto">
     <div class="mx-auto w-full max-w-4xl">
         <table class="table w-full">
             <!-- head -->
             <thead>
-                <tr>
+                <tr class=" text-black">
                     <th>no</th>
                     <th>Nama</th>
                     <th>kelas</th>
@@ -50,7 +52,7 @@ include '../connect.php';
                 $counter = 1;
 
                 while ($eksul = $result->fetch_assoc()) : ?>
-                    <tr>
+                    <tr class=" text-black">
                         <td><?php echo $counter++; ?></td>
                         <td> <?php echo $eksul['nama'] ?> </td>
                         <td> <?php echo $eksul['kelas'] ?> </td>
@@ -62,9 +64,6 @@ include '../connect.php';
                         <td><a href="ekskul/delete.php?id=<?php echo $eksul['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Hapus</a></td>
                     </tr>
                 <?php endwhile; ?>
-
-
-
             </tbody>
         </table>
     </div>

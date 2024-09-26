@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+if (empty($_SESSION['username']) || empty($_SESSION['level'])) {
+    echo "<script>alert('harap login terlebuh dahulu');document.location='index.php';</script>";
+    exit(); // Tambahkan exit() untuk menghentikan eksekusi kode lebih lanjut
+}
+  
 // Koneksi ke database
 include '../connect.php';
 
@@ -14,12 +21,17 @@ if (isset($_GET['id'])) {
         $row = $result->fetch_assoc();
         // Tampilkan detail item dengan struktur hero
         echo '
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="hero  min-h-screen">
           <div class="hero-content flex-col lg:flex-row-reverse items-start">
             <div class="w-full lg:w-1/2">
-              <h1 class="text-5xl font-bold">'.$row["name"].'</h1>
-              <p class="py-6">'.$row["description"].'</p>
-              <button class="btn btn-primary">Add to Cart</button>
+              <h1 class="text-5xl font-bold text-black">'.$row["name"].'</h1>
+              <p class="py-6 text-black">'.$row["description"].'</p>
+              <button class="btn btn-primary">
+              <a href="pendaftaran/from_pendaftaran.php"> Daftar </a>
+              </button>
+              <button class="btn btn-warning">
+              <a href="ekstra.php"> kembali </a>
+              </button>
             </div>
             <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
               <iframe class="w-[1000px] h-[400px]"
@@ -40,3 +52,10 @@ if (isset($_GET['id'])) {
 
 $conn->close();
 ?>
+
+
+<footer class="bg-green-800 text-white py-4">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Green Valley School. All rights reserved.</p>
+        </div>
+    </footer>

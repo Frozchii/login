@@ -67,6 +67,9 @@
                 </select>
             </div>
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-600">Kirim</button>
+            <button class="bg-red-500 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-600">
+                <a href="../ekstra.php">kembali</a>
+            </button>
         </form>
     </div>
 

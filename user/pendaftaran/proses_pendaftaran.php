@@ -82,7 +82,7 @@ echo '<!DOCTYPE html>
             text-align: left; /* Align text to the left */
         }
         .header .instansi h1 {
-            margin-left: 200px;
+            margin-left: 160px;
             font-size: 24px;
             color: #333;
         }
@@ -165,11 +165,11 @@ echo '<!DOCTYPE html>
             <img src="https://upload.wikimedia.org/wikipedia/id/thumb/f/f0/Logo_SMKN3Yk.JPG/175px-Logo_SMKN3Yk.JPG" alt="Logo Instansi">
             <div class="instansi">
                 <h1>SMKN 3 YOGYAKARTA</h1>
-                <p>Jl. R.W. Monginsidi No.2, Cokrodiningratan, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta</p>
+                <p>Pendaftaran Ekstra</p>
             </div>
         </div>
         <hr class="full-width"> <!-- Full width horizontal line -->
-        <h2>Form Pendaftaran Ekstrakurikuler</h2>
+        <h2>Formulir Pendaftaran Ekstrakurikuler</h2>
         <div class="section">
             <h3>Identitas Siswa</h3>
             <p><strong>Nama:</strong> ' . htmlspecialchars($nama) . '</p>
@@ -193,6 +193,8 @@ echo '<!DOCTYPE html>
         </div>
         <button onclick="preparePrint()">Cetak</button>
     </div>
+
+    
 
 </body>
 </html>';

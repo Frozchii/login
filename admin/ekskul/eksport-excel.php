@@ -11,7 +11,7 @@ header("Content-Disposition: attachment; filename=laporan-excel.xls");
 <h1 class="text-center my-4 text-2xl">PENDAFTARAN EKSTRAKULIKULER</h1>
 <div class="overflow-x-auto">
     <div class="mx-auto w-full max-w-4xl">
-        <table class="table w-full" border="1" style="border-collapse: collapse;">
+        <table class="table w-full" style="border-collapse: collapse;">
             <!-- head -->
             <thead>
                 <tr>

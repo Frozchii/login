@@ -21,19 +21,19 @@ $result = $conn->query($sql);
 
 
 
-<h1 class="text-center">Halaman User</h1>
+<h1 class="text-center my-8 text-2xl text-black ">Ekstra Yang Ditampilkan</h1>
 <div class="text-center mb-4">
          <button class="btn btn-info">
-            <a href="daftar/tambah.php" class="text-white">Tambah Data</a>
+            <a href="daftar/tambah.php" class="text-black">Tambah Data</a>
          </button>
    </div>
 <div class="overflow-x-auto">
     <div class="mx-auto w-full max-w-4xl">
         <table class="table w-full">
             <!-- head -->
-            <thead>
+            <thead class="text-black">
                 <tr>
-                    <th>#</th>
+                    <th>no</th>
                     <th>Name</th>
                     <th>Description</th>
                     <th>Image</th>
@@ -41,12 +41,12 @@ $result = $conn->query($sql);
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="text-black">
                 <?php
                 if ($result->num_rows > 0) {
                     $index = 1;
                     while ($row = $result->fetch_assoc()) {
-                        echo "<tr class='bg-base-200'>";
+                        echo "<tr class=''>";
                         echo "<td>" . $index++ . "</td>";
                         echo "<td>" . $row['name'] . "</td>";
                         echo "<td>" . $row['description'] . "</td>";

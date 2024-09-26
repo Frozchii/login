@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-themes="light">
 
 <head>
     <meta charset="UTF-8">
@@ -10,11 +10,13 @@
     <title>Document</title>
 </head>
 
-<body data-themes="dim">
+<body>
 
-    <div class="navbar bg-base-100 z-10 relative">
+    <div class="navbar bg-green-500 z-10 relative text-white">
         <div class="navbar-start">
+  
             <div>
+            <!-- side bar -->
                 <div class="drawer">
                     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
                     <div class="drawer-content">
@@ -27,44 +29,30 @@
                     </div>
                     <div class="drawer-side">
                         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                        <ul class="menu bg-green-500 text-white min-h-full w-80 p-4">
                             <h1 class="text-2xl text-center">MENU</h1>
                             <!-- Sidebar content here -->
                             <li>
                                 <a href="home_user.php">
-                                    <i class="fa fa-home" aria-hidden="true"> </i>
-                                    home
+                                    <i class="fa fa-home" aria-hidden="true"></i> Home
                                 </a>
                             </li>
                             <li>
-                                <a href="daftar/daftar_dasboard.php">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                    ektra
+                                <a href="ekstra.php">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Ekstra
                                 </a>
                             </li>
-                            <li>
-                                <a href="daftar.php">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                    content
-                                </a>
-                            </li>
-                            <li><a>Sidebar Item 2</a></li>
-
                         </ul>
                     </div>
                 </div>
-
             </div>
+            <a href="home_user.php" class="btn btn-ghost text-xl">Home</a> 
+            <a  href="ekstra.php" class="btn btn-ghost text-xl">Ekstra</a> 
         </div>
         <div class="navbar-center">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-xl">SKAGATA</a>
         </div>
         <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </button>
 
             <!-- Button to open the modal -->
             <label for="account-modal" class="btn btn-ghost">
@@ -75,7 +63,7 @@
             <input type="checkbox" id="account-modal" class="modal-toggle" />
             <div class="modal modal-bottom sm:modal-middle">
                 <!-- container -->
-                <div class="modal-box top-8 right-1 absolute mt-4 mr-4 w-1/5 mr-8 tec">
+                <div class="modal-box bg-white text-black top-8 right-1 absolute mt-4 mr-4 w-1/5 mr-8 tec">
                     <div>
                         <h3 class="font-bold text-lg text-center">Account Details</h3>
                         <p class="py-4">Username: </p>
@@ -94,8 +82,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!-- Script to handle logout action -->
     <script>document.documentElement.setAttribute('data-theme', 'dim');</script>
